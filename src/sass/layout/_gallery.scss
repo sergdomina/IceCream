@@ -1,0 +1,12 @@
+.gallery {
+  margin: 0 auto;
+  background-image: linear-gradient(
+    to bottom,
+    var(--bg-about-footer) 39.6%,
+    var(--bg-secondary) 40.1%
+  );
+}
+
+.gallery__image {
+  margin: 0 auto;
+}

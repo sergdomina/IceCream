@@ -1,0 +1,237 @@
+.customers__section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: var(--color-prime);
+
+  @media screen and (min-width: 768px) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 125px;
+    padding-bottom: 125px;
+  }
+}
+
+.customers__container {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 100px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-left: 74px;
+    padding-right: 74px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding-left: 175px;
+    padding-right: 175px;
+  }
+}
+
+.customers__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  @media screen and (min-width: 480px) {
+    max-width: 280px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 620px;
+    margin-bottom: 35px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 926px;
+  }
+}
+
+.customers__list {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.item__wrapper {
+  background-color: #fafafa;
+  padding: 43px 66px 26px 57px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    padding: 47px 80px 34px 80px;
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 47px 89px 39px 87px;
+    margin-bottom: 15px;
+  }
+}
+
+.photo__wrapper {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.customers__photo {
+  margin: 0 auto;
+}
+
+.customers__text {
+  position: relative;
+  text-align: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.58;
+  color: var(--text-color-prime);
+  background-image: url(../images/customers/text-line.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  z-index: 2;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 2.14;
+    letter-spacing: 0.04em;
+    background-image: url(../images/customers/text-line-tablet.png);
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.87;
+    background-image: url(../images/customers/text-line-pc.png);
+  }
+}
+
+.customers__quotes {
+  position: absolute;
+  top: 28px;
+  left: 61px;
+
+  width: 54px;
+  height: 40px;
+  z-index: 1;
+
+  @media screen and (min-width: 768px) {
+    top: 30px;
+    left: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    top: 32px;
+    left: 50px;
+  }
+}
+
+.customers__dots-image {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: 18px;
+  height: 4px;
+  width: 32px;
+  background-image: url(../images/customers/dots.png);
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 15px;
+  }
+}
+
+.customers__item-name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.85;
+  text-align: center;
+  color: var(--text-color-prime);
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.87;
+    top: 210px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+    line-height: 1.85;
+    top: 180px;
+  }
+}
+
+.customers__dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.customers__dots-item:not(:last-child) {
+  margin-right: 18px;
+}
+.customers__dots-item {
+  display: block;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.customers__dots-item::after {
+  display: block;
+  transition: background-color 0.6s ease;
+  content: '';
+  height: 12px;
+  width: 12px;
+  fill: #ddd;
+  background-image: url(../images/customers/dots.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.customers__dots-item.active::after {
+  opacity: 0;
+}
+.active,
+.customers__dots-item:focus {
+  background-image: url(../images/customers/dots-home.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: unset;
+}
+
+/* Анимация слайдов */
+.customers .customers__item {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}

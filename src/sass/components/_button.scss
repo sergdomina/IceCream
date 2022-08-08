@@ -1,0 +1,60 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+
+  width: 186px;
+  height: 44px;
+  border-radius: 22px;
+  border: none;
+}
+
+.button--secondary {
+  color: var(--accent-text-color);
+  background-color: var(--bg-secondary);
+
+  &:focus,
+  &:hover {
+    background-color: var(--bg-accent-btn);
+    transition: color 250ms $timing-function, background-color 250ms $timing-function;
+  }
+}
+
+.button__text {
+  padding-right: 21px;
+}
+.button__icon {
+  display: inline-flex;
+  fill: none;
+  stroke: currentColor;
+  width: 7px;
+  height: 10px;
+}
+
+.close-button {
+  cursor: pointer;
+  padding: 0;
+  position: absolute;
+  top: 23px;
+  right: 34px;
+
+  background-color: transparent;
+  border: 0;
+  color: var(--color-prime);
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
+}
+.icon-close {
+  fill: none;
+  stroke: currentColor;
+  width: 14px;
+  height: 14px;
+}

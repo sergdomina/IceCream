@@ -1,0 +1,26 @@
+<section class="gallery">
+  <h2 class="visually-hidden">Gallery</h2>
+  <picture>
+    <source
+      srcset="
+        ./images/gallery/desktop/gallery-desktop.jpg    1x,
+        ./images/gallery/desktop/gallery-desktop@2x.jpg 2x
+      "
+      media="(min-width: 1280px)"
+    />
+    <source
+      srcset="
+        ./images/gallery/tablet/gallery-tablet.jpg    1x,
+        ./images/gallery/tablet/gallery-tablet@2x.jpg 2x
+      "
+      media="(min-width: 768px)"
+    />
+    <source
+      srcset="
+        ./images/gallery/mobile/gallery-mobile.jpg    1x,
+        ./images/gallery/mobile/gallery-mobile@2x.jpg 2x
+      "
+    />
+    <img class="gallery__image" src="./images/gallery/mobile/gallery-mobile.jpg" alt="Gallery" />
+  </picture>
+</section>

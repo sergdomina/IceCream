@@ -1,0 +1,117 @@
+<section class="customers__section" id="customers">
+  <h2 hidden>Comment</h2>
+  <div class="customers__container">
+    <!-- First-comment -->
+    <div class="customers__wrapper">
+      <ul class="customers__list">
+        <li class="customers__item">
+          <div class="photo__wrapper">
+            <picture>
+              <source
+                srcset="
+                  ./images/customers/slider-img/slider-img-1.webp    1x,
+                  ./images/customers/slider-img/slider-img-1@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                class="customers__photo"
+                srcset="
+                  ./images/customers/slider-img/slider-img-1.png    1x,
+                  ./images/customers/slider-img/slider-img-1@2x.png 2x
+                "
+                src="./images/customers/slider-img/slider-img-1.png"
+                alt="фото клиента"
+              />
+            </picture>
+          </div>
+
+          <div class="item__wrapper">
+            <p class="customers__text">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+              hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in.
+            </p>
+          </div>
+          <svg class="customers__quotes">
+            <use href="./images/customers/sprite/sprite.svg#quotes"></use>
+          </svg>
+          <div class="customers__dots-image"></div>
+          <p class="customers__item-name">Emily, Los Angeles</p>
+        </li>
+        <li class="customers__item">
+          <div class="photo__wrapper">
+            <picture>
+              <source
+                srcset="
+                  ./images/customers/slider-img/slider-img-2.webp    1x,
+                  ./images/customers/slider-img/slider-img-2@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                class="customers__photo"
+                srcset="
+                  ./images/customers/slider-img/slider-img-2.png    1x,
+                  ./images/customers/slider-img/slider-img-2@2x.png 2x
+                "
+                src="./images/customers/slider-img/slider-img-2.png"
+                alt="фото клиента"
+              />
+            </picture>
+          </div>
+
+          <div class="item__wrapper">
+            <p class="customers__text">
+              Lorem ipsum primis in nibh vel risus. Nullam viverra consectetuer. Quisque cursus et,
+              porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.
+            </p>
+          </div>
+          <svg class="customers__quotes">
+            <use href="./images/customers/sprite/sprite.svg#quotes"></use>
+          </svg>
+          <div class="customers__dots-image"></div>
+          <p class="customers__item-name">Emma, Chicago</p>
+        </li>
+        <li class="customers__item">
+          <div class="photo__wrapper">
+            <picture>
+              <source
+                srcset="
+                  ./images/customers/slider-img/slider-img-3.webp    1x,
+                  ./images/customers/slider-img/slider-img-3@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img
+                class="customers__photo"
+                srcset="
+                  ./images/customers/slider-img/slider-img-3.png    1x,
+                  ./images/customers/slider-img/slider-img-3@2x.png 2x
+                "
+                src="./images/customers/slider-img/slider-img-3.png"
+                alt="фото клиента"
+              />
+            </picture>
+          </div>
+
+          <div class="item__wrapper">
+            <p class="customers__text">
+              Riverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
+              nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+            </p>
+          </div>
+          <svg class="customers__quotes">
+            <use href="./images/customers/sprite/sprite.svg#quotes"></use>
+          </svg>
+          <div class="customers__dots-image"></div>
+          <p class="customers__item-name">Barbara, Detroit</p>
+        </li>
+      </ul>
+    </div>
+    <ul class="customers__dots">
+      <li class="customers__dots-item" onclick="currentSlide(1)"></li>
+      <li class="customers__dots-item" onclick="currentSlide(2)"></li>
+      <li class="customers__dots-item" onclick="currentSlide(3)"></li>
+    </ul>
+  </div>
+</section>
